@@ -1,6 +1,6 @@
 "" basic settings
 set nocompatible			" set not compatible with vi
-set showmatch               " show matching 
+" set showmatch               " show matching 
 set ignorecase              " case insensitive 
 set mouse=v                 " middle-click paste with 
 set hlsearch                " highlight search 
@@ -26,29 +26,20 @@ set ttyfast                 " Speed up scrolling in Vim
 "  set backupdir=~/.cache/vim " Directory to store backup files
 set laststatus=2			" set up status line
 
+" terminal
+nnoremap <c-@> :terminal ++curwin<CR>
+
 " netrw
-" let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_browse_split = 0
-let g:netrw_altv = 1
-" let g:netrw_winsize = 25
-" augroup ProjectDrawer
-"   autocmd!
-"   autocmd VimEnter * :Vexplore
-" augroup END
+nnoremap <c-n> :Explore<CR>
 
 "" plugins
 
 " gruvbox8
 colorscheme gruvbox8
 
-" fzf
-set rtp+=/usr/local/opt/fzf	" installed with homebrew
-set rtp+=~/.fzf				" installed with git
-" ctrl-p for fuzzy file search
-nnoremap <c-p> :FZF <enter>
-
 " lightline
 let g:lightline = {
 	\ 'colorscheme': 'gruvbox8',
 	\ }
+
+
