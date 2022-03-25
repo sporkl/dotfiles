@@ -1,1 +1,1 @@
-let g:netrw_bookmarklist= ['/Users/dv/.vim/pack/plugins/', '/Users/dv/.vim/pack/plugins/']
+let g:netrw_bookmarklist= ['/', '/Users/dv/', '/Volumes/FILES/', '/Volumes/FILES/,proj/', '/Volumes/FILES/notes/']

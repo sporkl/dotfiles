@@ -26,6 +26,10 @@ set ttyfast                 " Speed up scrolling in Vim
 "  set backupdir=~/.cache/vim " Directory to store backup files
 set laststatus=2			" set up status line
 
+" find
+set path=.,**
+nmap <c-p> :find 
+
 " terminal
 nnoremap <c-@> :terminal ++curwin<CR>
 
