@@ -1,0 +1,4 @@
+export EDITOR="vim"
+export VISUAL="gvim"
+
+alias gdm='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
