@@ -1,3 +1,8 @@
+# to initialize dotfiles on new machine run these commands:
+# git clone --bare https://github.com/sporkl/dotfiles.git $HOME/.dotfiles
+# alias gdm='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+# gdm checkout
+
 export EDITOR="vim"
 export VISUAL="gvim"
 
