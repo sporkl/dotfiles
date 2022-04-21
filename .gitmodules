@@ -1,0 +1,18 @@
+[submodule ".vim/pack/plugins/start/editorconfig-vim"]
+	path = .vim/pack/plugins/start/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim
+[submodule ".vim/pack/plugins/start/lightline.vim"]
+	path = .vim/pack/plugins/start/lightline.vim
+	url = https://github.com/itchyny/lightline.vim
+[submodule ".vim/pack/plugins/start/vim-commentary"]
+	path = .vim/pack/plugins/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary
+[submodule ".vim/pack/plugins/start/vim-gruvbox8"]
+	path = .vim/pack/plugins/start/vim-gruvbox8
+	url = https://github.com/lifepillar/vim-gruvbox8
+[submodule ".vim/pack/plugins/start/vim-sleuth"]
+	path = .vim/pack/plugins/start/vim-sleuth
+	url = https://github.com/tpope/vim-sleuth
+[submodule ".vim/pack/plugins/start/vim-surround"]
+	path = .vim/pack/plugins/start/vim-surround
+	url = https://github.com/tpope/vim-surround

@@ -1,12 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
-let g:netrw_dirhist_3='/Volumes/FILES/notes'
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/Volumes/FILES/,proj/h212/spr2022-h212-dvolkov/hw11'
+let g:netrw_dirhist_5='/Volumes/FILES/,proj/h212/spr2022-h212-dvolkov'
+let g:netrw_dirhist_4='/Volumes/FILES/,proj/h212'
+let g:netrw_dirhist_3='/Volumes/FILES/,proj'
 let g:netrw_dirhist_2='/Users/dv'
 let g:netrw_dirhist_1='/Volumes/FILES/notes'
 let g:netrw_dirhist_0='/Users/dv'
 let g:netrw_dirhist_9='/Volumes/FILES/,proj/MPETuner/Pivotuner/Pivotuner'
 let g:netrw_dirhist_8='/Volumes/FILES/,proj/MPETuner/Pivotuner'
 let g:netrw_dirhist_7='/Volumes/FILES/,proj/MPETuner'
-let g:netrw_dirhist_6='/Volumes/FILES/,proj'
-let g:netrw_dirhist_5='/Volumes/FILES/notes'
-let g:netrw_dirhist_4='/Volumes/FILES/,proj/MPETuner/Pivotuner/Pivotuner'
