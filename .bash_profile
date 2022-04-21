@@ -1,1 +1,1 @@
-. ~/.shrc
+. $HOME/.shrc
