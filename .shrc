@@ -7,6 +7,8 @@
 export EDITOR="vim"
 export VISUAL="gvim"
 
+export GRADLE_USER_HOME="~/.gradle"
+
 alias gdm='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # to update: gdm pull && gdm pull --recurse-submodules
 
