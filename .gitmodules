@@ -28,3 +28,6 @@
 [submodule "vim-racket"]
 	path = vim-racket
 	url = https://github.com/wlangstroth/vim-racket
+[submodule ".vim/pack/plugins/start/reply.vim"]
+	path = .vim/pack/plugins/start/reply.vim
+	url = https://github.com/rhysd/reply.vim
