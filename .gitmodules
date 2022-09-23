@@ -31,3 +31,6 @@
 [submodule ".vim/pack/plugins/start/reply.vim"]
 	path = .vim/pack/plugins/start/reply.vim
 	url = https://github.com/rhysd/reply.vim
+[submodule ".vim/pack/plugins/start/vim-repeat"]
+	path = .vim/pack/plugins/start/vim-repeat
+	url = https://github.com/tpope/vim-repeat
