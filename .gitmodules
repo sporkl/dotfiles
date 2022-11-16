@@ -37,3 +37,6 @@
 [submodule ".vim/pack/plugins/start/vim-rsi"]
 	path = .vim/pack/plugins/start/vim-rsi
 	url = https://github.com/tpope/vim-rsi
+[submodule ".vim/pack/plugins/start/vim-racket"]
+	path = .vim/pack/plugins/start/vim-racket
+	url = https://github.com/benknoble/vim-racket.git
