@@ -15,3 +15,4 @@ alias gdm='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias imgcompress='convert -strip -interlace Plane -gaussian-blur 0.05 -quality 85%'
 
 alias python3='python3.9'
+alias pip3='pip3.9'
