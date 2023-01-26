@@ -40,3 +40,6 @@
 [submodule ".vim/pack/plugins/start/vim-racket"]
 	path = .vim/pack/plugins/start/vim-racket
 	url = https://github.com/benknoble/vim-racket.git
+[submodule ".vim/pack/plugins/start/vim-startify"]
+	path = .vim/pack/plugins/start/vim-startify
+	url = https://github.com/mhinz/vim-startify
