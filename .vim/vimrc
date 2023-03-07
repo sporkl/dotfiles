@@ -28,9 +28,6 @@ set ttyfast                 " Speed up scrolling in Vim
 set laststatus=2			" set up status line
 set background=dark			" dark mode
 
-" open file
-nnoremap <c-p> :e **/*
-
 " terminal
 set termwinscroll=1000
 nnoremap <c-@> :terminal ++curwin<cr>
