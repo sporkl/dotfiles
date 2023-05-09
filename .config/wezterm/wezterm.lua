@@ -1,15 +1,17 @@
 local wezterm = require "wezterm"
 
-return {
+local config = {}
 
-	-- terminal size setup in terms of defaults
-	initial_cols = 80 * 3,
-	initial_rows = 24 * 2,
+-- terminal size setup in terms of defaults
+config.initial_cols = 80 * 3
+config.initial_rows = 24 * 2
 
-	-- typography
-	font = wezterm.font("Iosevka Fixed Slab", {font_size = 12}),
-	line_height = 1.15,
+-- typography
+config.font = wezterm.font("Iosevka Fixed Slab")
+config.line_height = 1.15
+config.font_size = 12
 
-	-- colorscheme
-	color_scheme = "Gruvbox Dark",
-}
+-- color scheme
+config.color_scheme = "GruvboxDark"
+
+return config
