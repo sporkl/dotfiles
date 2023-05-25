@@ -30,7 +30,7 @@ set background=dark			" dark mode
 
 " terminal
 set termwinscroll=1000
-nnoremap <c-@> :terminal ++curwin<cr>
+nnoremap <c-s> :terminal ++curwin<cr>
 
 " netrw
 nnoremap <c-n> :Explore<cr>
