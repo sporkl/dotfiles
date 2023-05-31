@@ -34,6 +34,11 @@ nnoremap <c-s> :terminal ++curwin<cr>
 
 " netrw
 nnoremap <c-n> :Explore<cr>
+let g:netrw_keepdir = 0 " makes file copying word easier
+let g:netrw_banner = 0 " hide the banner
+" different copy command for easier directory copying
+let g:netrw_localcopydircmd = 'cp -r'
+
 
 "" gui
 set guifont=Iosevka\ Fixed\ Slab:h14
