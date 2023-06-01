@@ -43,3 +43,6 @@
 [submodule ".vim/pack/plugins/start/vim-startify"]
 	path = .vim/pack/plugins/start/vim-startify
 	url = https://github.com/mhinz/vim-startify
+[submodule ".vim/pack/plugins/start/latex-unicoder.vim"]
+	path = .vim/pack/plugins/start/latex-unicoder.vim
+	url = https://github.com/joom/latex-unicoder.vim.git

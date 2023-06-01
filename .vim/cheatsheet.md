@@ -8,9 +8,9 @@
 
 ## custom 
 
-`<c-o>`		| open netrw in window
+`<c-n>`		| open netrw in window
 `<c-p>`		| start find
-`<c-@>`		| open terminal in window
+`<c-s>`		| open terminal in window
 
 ## netrw
 
@@ -18,6 +18,13 @@
 `mb`		| make bookmark of current directory
 `qb`		| list bookmarks
 `{cnt}gb`	| jump to bookmark `cnt`
+`mf`		| mark file
+`mt`		| mark target
+`mm`		| move marked file to marked target
+`mc`		| copy marked file to marked target
+`%`			| create a new file
+`d`			| delete a file
+`R`			| rename a file
 
 ## window
 
@@ -28,4 +35,13 @@
 `<c-w> +`	| increase window vertical height. (`-` for decrease)
 `<c-w> >`	| increase window horizontal height (`<` for decrease)
 
+# searching
+
+`:grep s **`| recursively search all subdirectories for the string "s"
+`:vim s **`	| recursively search all subdirectories for the string "s"
+`:copen`	| open quickfix list to show all results of the search
+
+# unicode input
+
+`<c-l>`		| start latex-style input
 
