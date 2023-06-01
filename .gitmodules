@@ -46,3 +46,6 @@
 [submodule ".vim/pack/plugins/start/latex-unicoder.vim"]
 	path = .vim/pack/plugins/start/latex-unicoder.vim
 	url = https://github.com/joom/latex-unicoder.vim.git
+[submodule ".config/z"]
+	path = .config/z
+	url = https://github.com/rupa/z.git
