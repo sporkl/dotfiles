@@ -9,7 +9,7 @@ config.initial_rows = 24 * 2
 -- typography
 config.font = wezterm.font("Iosevka Fixed Slab")
 config.line_height = 1.15
-config.font_size = 12
+config.font_size = 14
 
 -- color scheme
 config.color_scheme = "GruvboxDark"
