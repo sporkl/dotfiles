@@ -39,6 +39,14 @@ let g:netrw_banner = 0 " hide the banner
 " different copy command for easier directory copying
 let g:netrw_localcopydircmd = 'cp -r'
 
+" buffer cleanup
+function s:bcleanup() abort
+    let l:buffers = filter(getbufinfo(), {_, v -> !v.loaded && v.listed})
+    if !empty(l:buffers)
+        execute 'bdelete' join(map(l:buffers, {_, v -> v.bufnr}))
+    endif
+endfunction
+command! -bar Bcleanup call s:bcleanup()
 
 "" gui
 set guifont=Iosevka\ Fixed\ Slab:h14
