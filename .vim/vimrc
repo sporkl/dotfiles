@@ -30,10 +30,10 @@ set laststatus=2			" set up status line
 
 " terminal
 set termwinscroll=1000
-nnoremap <c-s> :terminal ++curwin<cr>
+nnoremap <c-s> :enew<cr>:terminal ++curwin<cr>
 
 " netrw
-nnoremap <c-n> :Explore<cr>
+nnoremap <c-n> :enew<cr>:Explore<cr>
 let g:netrw_keepdir = 0 " makes file copying word easier
 let g:netrw_banner = 0 " hide the banner
 " different copy command for easier directory copying
@@ -60,11 +60,6 @@ colorscheme gruvbox8
 let g:lightline = {
 	\ 'colorscheme': 'gruvbox8',
 	\ }
-
-" ale
-
-let g:ale_completion_enabled = 1
-set omnifunc=ale#completion#OmniFunc
 
 "" language-specific settings
 
