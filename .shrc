@@ -6,6 +6,8 @@
 
 export EDITOR='vim'
 
+alias vrs='vim --remote-silent'
+
 # z command for fast traversal
 . ~/.config/z/z.sh
 
