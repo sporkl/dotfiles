@@ -61,7 +61,14 @@ let g:lightline = {
 	\ 'colorscheme': 'gruvbox8',
 	\ }
 
-"" language-specific settings
+" ale
+let g:ale_linters = {
+\ 'cpp': []
+\}
+
+let g:ale_completion_enabled = 1
+
+" language-specific settings
 
 " scheme and friends
 autocmd Filetype scheme let b:AutoPairs={'(':')', '[':']', '{':'}','"':'"','```':'```','"""':'"""',"'''":"'''"}
