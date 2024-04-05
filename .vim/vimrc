@@ -27,6 +27,8 @@ set ttyfast                 " Speed up scrolling in Vim
 "  set backupdir=~/.cache/vim " Directory to store backup files
 set laststatus=2			" set up status line
 " set background=dark			" dark mode
+set linebreak		    " wrap text at end of words
+
 
 " terminal
 set termwinscroll=1000
