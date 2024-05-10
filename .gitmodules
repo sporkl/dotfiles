@@ -46,3 +46,6 @@
 [submodule ".config/z"]
 	path = .config/z
 	url = https://github.com/rupa/z.git
+[submodule ".vim/pack/plugins/start/vim-lilypond"]
+	path = .vim/pack/plugins/start/vim-lilypond
+	url = https://github.com/sersorrel/vim-lilypond.git
