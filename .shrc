@@ -14,6 +14,6 @@ alias vrs='vim --remote-silent'
 alias gdm='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # to update: gdm pull && gdm pull --recurse-submodules
 
-alias imgcompress='convert -strip -interlace Plane -gaussian-blur 0.05 -quality 85%'
+alias imgcompress='magick -strip -interlace Plane -gaussian-blur 0.05 -quality 85%'
 
 source ~/py/bin/activate

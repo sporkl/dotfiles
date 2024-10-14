@@ -16,9 +16,6 @@
 [submodule ".vim/pack/plugins/start/vim-surround"]
 	path = .vim/pack/plugins/start/vim-surround
 	url = https://github.com/tpope/vim-surround
-[submodule ".vim/pack/plugins/start/auto-pairs"]
-	path = .vim/pack/plugins/start/auto-pairs
-	url = https://github.com/jiangmiao/auto-pairs
 [submodule ".vim/pack/plugins/start/ctrlp.vim"]
 	path = .vim/pack/plugins/start/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim
@@ -49,3 +46,9 @@
 [submodule ".vim/pack/plugins/start/vim-lilypond"]
 	path = .vim/pack/plugins/start/vim-lilypond
 	url = https://github.com/sersorrel/vim-lilypond.git
+[submodule ".vim/pack/plugins/start/vim-godot"]
+	path = .vim/pack/plugins/start/vim-godot
+	url = https://github.com/habamax/vim-godot.git
+[submodule ".vim/pack/plugins/start/hexmode"]
+	path = .vim/pack/plugins/start/hexmode
+	url = https://github.com/fidian/hexmode.git
