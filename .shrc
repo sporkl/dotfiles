@@ -17,3 +17,4 @@ alias gdm='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias imgcompress='magick -strip -interlace Plane -gaussian-blur 0.05 -quality 85%'
 
 source ~/py/bin/activate
+export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH" # add haskell to path
