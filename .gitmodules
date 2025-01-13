@@ -52,3 +52,6 @@
 [submodule ".vim/pack/plugins/start/hexmode"]
 	path = .vim/pack/plugins/start/hexmode
 	url = https://github.com/fidian/hexmode.git
+[submodule ".vim/pack/plugins/start/Coqtail"]
+	path = .vim/pack/plugins/start/Coqtail
+	url = https://github.com/whonore/Coqtail.git
