@@ -16,5 +16,8 @@ alias gdm='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 alias imgcompress='magick -strip -interlace Plane -gaussian-blur 0.05 -quality 85%'
 
+alias movs2mp4s='for i in *.mov; do ffmpeg -i "$i" "${i%.*}.mp4"; done'
+alias findlarge='du -ah | sort -rh | head'
+
 source ~/py/bin/activate
 export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH" # add haskell to path
