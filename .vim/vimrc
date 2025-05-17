@@ -82,3 +82,6 @@ autocmd Filetype scheme set expandtab
 
 " lilypond
 autocmd FileType lilypond setlocal commentstring=\%\ %s
+
+" rocq
+let g:coqtail_noindent = 1

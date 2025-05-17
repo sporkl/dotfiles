@@ -15,6 +15,14 @@ alias gdm='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # to update: gdm pull && gdm pull --recurse-submodules
 
 alias imgcompress='magick -strip -interlace Plane -gaussian-blur 0.05 -quality 85%'
+function pdfcompress() {
+	for f in "$@"; do
+	echo "compressing $f"
+		pdf2ps "$f" "$f".ps
+		ps2pdf -dPDFSETTINGS=/default "$f".ps "$f"
+		rm "$f".ps
+	done
+}
 
 alias movs2mp4s='for i in *.mov; do ffmpeg -i "$i" "${i%.*}.mp4"; done'
 alias findlarge='du -ah | sort -rh | head'
