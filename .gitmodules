@@ -55,3 +55,6 @@
 [submodule ".vim/pack/plugins/start/Coqtail"]
 	path = .vim/pack/plugins/start/Coqtail
 	url = https://github.com/whonore/Coqtail.git
+[submodule ".vim/pack/plugins/start/vim-coffee-script"]
+	path = .vim/pack/plugins/start/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script.git

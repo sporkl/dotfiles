@@ -14,8 +14,8 @@ alias vrs='vim --remote-silent'
 alias gdm='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # to update: gdm pull && gdm pull --recurse-submodules
 
-alias imgcompress='magick -strip -interlace Plane -gaussian-blur 0.05 -quality 85%'
-function pdfcompress() {
+imgcompress () { magick "$1" -strip -interlace Plane -gaussian-blur 0.05 -quality 85% "$1".jpg }
+pdfcompress () {
 	for f in "$@"; do
 	echo "compressing $f"
 		pdf2ps "$f" "$f".ps
@@ -29,3 +29,4 @@ alias findlarge='du -ah | sort -rh | head'
 
 source ~/py/bin/activate
 export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH" # add haskell to path
+export PATH="/usr/local/opt/ruby/bin:$PATH" # add brew ruby to path
