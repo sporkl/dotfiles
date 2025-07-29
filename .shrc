@@ -6,6 +6,8 @@
 
 export EDITOR='vim'
 
+export HISTSIZE=20000
+
 alias vrs='vim --remote-silent'
 
 # z command for fast traversal

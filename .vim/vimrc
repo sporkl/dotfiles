@@ -57,6 +57,11 @@ function s:bcleanup() abort
 endfunction
 command! -bar Bcleanup call s:bcleanup()
 
+" notes
+
+command! Notespull !rclone sync webserver:notes %:p:h
+command! Notespush !rclone sync %:p:h webserver:notes
+
 "" gui
 set guifont=Iosevka\ Fixed\ Slab:h14
 
