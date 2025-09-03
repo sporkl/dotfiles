@@ -31,7 +31,7 @@ set linebreak		    " wrap text at end of words
 
 
 " terminal
-set termwinscroll=1000
+set termwinscroll=9999
 
 nnoremap <c-s> :enew<cr>:terminal ++curwin<cr>
 
