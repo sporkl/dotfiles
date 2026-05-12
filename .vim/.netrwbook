@@ -1,1 +1,1 @@
-let g:netrw_bookmarklist= ['/', '/Users/dv/', '/Volumes/FILES/', '/Volumes/FILES/_proj/', '/Volumes/FILES/notes/']
+let g:netrw_bookmarklist= ['/', '/Users/dv/', '/Users/dv/Desktop/FILES/', '/Users/dv/Desktop/FILES/_proj/', '/Users/dv/Desktop/FILES/notes/']
