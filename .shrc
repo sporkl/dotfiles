@@ -4,11 +4,19 @@
 # gdm checkout
 # gdm submodule update --init --recursive
 
-export EDITOR='vim'
+vrs () {
+	if [ $# -gt 0 ]; then
+		vim --remote-silent "$@"
+	elif [ -n "$( vim --serverlist )" ]; then
+		vim --remote-send "<C-\><C=n>:new<CR>"
+	else
+		vim
+	fi
+}
+
+export EDITOR='vrs'
 
 export HISTSIZE=20000
-
-alias vrs='vim --remote-silent'
 
 # z command for fast traversal
 . ~/.config/z/z.sh
