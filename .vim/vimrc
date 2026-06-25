@@ -63,7 +63,7 @@ command! Notespull !rclone sync webserver:notes %:p:h
 command! Notespush !rclone sync %:p:h webserver:notes
 
 "" gui
-set guifont=Iosevka\ Fixed\ Slab:h14
+set guifont=IosevkaTermSlab\ NFM\ Medium:h14
 
 "" plugins
 

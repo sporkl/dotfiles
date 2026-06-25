@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+
+# vrs.sh
+# wrapper around vim to open with --remote-silent if possible
+
+if [ $# -gt 0 ]; then
+	exec vim --remote-wait-silent "$@"
+elif [ -n "$( vim --serverlist )" ]; then
+	exec vim --remote-send "<C-\><C-n>:new<CR>"
+else
+	exec vim
+fi

@@ -4,16 +4,7 @@
 # gdm checkout
 # gdm submodule update --init --recursive
 
-vrs () {
-	if [ $# -gt 0 ]; then
-		vim --remote-silent "$@"
-	elif [ -n "$( vim --serverlist )" ]; then
-		vim --remote-send "<C-\><C=n>:new<CR>"
-	else
-		vim
-	fi
-}
-
+export PATH="$HOME/.config/vrs:$PATH" # add vrs vim wrapper to path
 export EDITOR='vrs'
 
 export HISTSIZE=20000
