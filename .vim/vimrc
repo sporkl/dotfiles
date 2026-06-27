@@ -57,6 +57,9 @@ function s:bcleanup() abort
 endfunction
 command! -bar Bcleanup call s:bcleanup()
 
+" ctags
+set tags=tags;/
+
 " notes
 
 command! Notespull !rclone sync webserver:notes %:p:h
