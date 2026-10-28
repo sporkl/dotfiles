@@ -8,3 +8,5 @@
 [user]
 	name = Dmitri Volkov
 	email = dmitri@dmitrivolkov.com
+[core]
+	trustctime = false
