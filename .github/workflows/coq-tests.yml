@@ -1,0 +1,89 @@
+name: Coq Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - '**'
+    paths:
+      - '.github/workflows/coq-tests.yml'
+      - 'tox.ini'
+      - 'python/coqtop.py'
+      - 'python/xmlInterface.py'
+      - 'tests/coq/**'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  coq-tests:
+    name: Coq integration tests
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        coq_version:
+          - '8.4'
+          - '8.5'
+          - '8.6'
+          - '8.7'
+          - '8.8'
+          - '8.9'
+          - '8.10'
+          - '8.11'
+          - '8.12'
+          - '8.13'
+          - '8.14'
+          - '8.15'
+          - '8.16'
+          - '8.17'
+          - '8.18'
+          - '8.19'
+          - '8.20'
+          - '9.0'
+          - '9.1'
+          - '9.2'
+          - 'master'
+        # I'd like to test the oldest version that Coqtail supports (3.6), but
+        # setup-python doesn't support it except on ubuntu-20.04, which is
+        # deprecated as of 2025-04-15. Using 3.10 instead as that should
+        # hopefully be supported without any issues for a while.
+        # https://github.com/actions/setup-python/issues/544
+        # https://github.com/actions/runner-images/issues/11101
+        py_version: ['3.10']
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Nix
+        uses: cachix/install-nix-action@v31
+        with:
+          nix_path: nixpkgs=channel:nixpkgs-unstable
+      - name: Install Cachix
+        uses: cachix/cachix-action@v16
+        with:
+          name: coq
+          skipPush: true
+      # magic-nix-cache is deprecated as of 2025-02-1. Build times for Rocq
+      # master don't seem to be too bad without it, so we can go with that for
+      # now.
+      # https://dtr.mn/magic-nix-cache-eol
+      # - name: Set up Nix cache
+      #   # Only Coq master needs additional caching.
+      #   if: ${{ matrix.coq_version == 'master' }}
+      #   uses: DeterminateSystems/magic-nix-cache-action@v9
+      - name: Install Coq ${{ matrix.coq_version }}
+        run: nix-env -j auto --cores 0 -i -f ci/coq.nix --argstr version ${{ matrix.coq_version }}
+      - name: Install Python ${{ matrix.py_version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.py_version }}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install tox
+      - name: Run Coq tests
+        run: |
+          coqtop --version
+          python --version
+          tox -e coq-py310
