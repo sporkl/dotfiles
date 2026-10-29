@@ -2,7 +2,7 @@
 # git clone --bare https://github.com/sporkl/dotfiles.git $HOME/.dotfiles
 # alias gdm='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # gdm checkout
-# gdm submodule update --init --recursive
+# to add/update a subtree: gdm <add/update> -P <local path> <remote url or ref> <remote branch if not ref> --squash
 
 export PATH="$HOME/.config/vrs:$PATH" # add vrs vim wrapper to path
 export EDITOR='vrs'
@@ -13,7 +13,7 @@ export HISTSIZE=20000
 . ~/.config/z/z.sh
 
 alias gdm='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-# to update: gdm pull && gdm pull --recurse-submodules
+# to update: gdm pull
 
 imgcompress () { magick "$1" -strip -interlace Plane -gaussian-blur 0.05 -quality 85% "$1".jpg }
 pdfcompress () {
@@ -28,6 +28,3 @@ pdfcompress () {
 alias movs2mp4s='for i in *.mov; do ffmpeg -i "$i" "${i%.*}.mp4"; done'
 alias all2flac='for i in *; do ffmpeg -i "$i" "${i%.*}.flac"; done'
 alias findlarge='du -ah | sort -rh | head'
-
-export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH" # add haskell to path
-export PATH="/usr/local/opt/ruby/bin:$PATH" # add brew ruby to path

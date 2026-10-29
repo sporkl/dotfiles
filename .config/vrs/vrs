@@ -5,7 +5,7 @@
 
 vim --version | grep -q +clientserver
 if [ $? -ne 0 ]; then
-	exec vim
+	exec vim "$@"
 elif [ $# -gt 0 ]; then
 	exec vim --remote-wait-silent "$@"
 elif [ -n "$( vim --serverlist )" ]; then
